@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="mainScene" extends="Scene"> 
+<script type="text/brightscript" uri="mainScene.brs"/>
+<children>
+
+    <poster
+      id = "font"
+      visible = "true"
+      width = "1280"
+      height = "720"
+      uri = "pkg:/images/white.png" />
+
+    <layoutGroup
+      id = "layoutGroupFirst"
+      translation = "[640,100]"
+      layoutDirection = "vert"
+      vertAlignment = "top"
+      horizAlignment = "center"
+      itemSpacings = "[60]">
+
+      <SimpleLabel 
+        id ="titleLabel" 
+        visible = "true"
+        text = "Who is watching?"
+        color = "0x696969"
+        fontUri = "font:BoldSystemFontFile"
+        fontSize = "[40]"/>
+
+      <RowList 
+        id = "rowlist" 
+        translation ="[0,0]"
+        numRows = "1"
+        itemSpacing="[20]" 
+        itemSize = "[1000, 330]" 
+        rowItemSize = "[[200, 330]]"
+        itemComponentName = "customItem" 
+        drawFocusFeedback = "false"/>
+    </layoutGroup>      
+      
+    </children>
+
+</component>

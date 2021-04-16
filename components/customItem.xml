@@ -1,0 +1,48 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<component name = "customItem" extends = "Group" >
+<interface>
+        <field id = "itemContent"   type = "node"  onChange="onItemContentChanged"/>
+        <field id = "focusPercent"  type = "float" onChange="onItemHasFocus"/>
+</interface>
+<script type = "text/brightscript" uri="customItem.brs" >
+</script>
+<children>
+                                 
+<layoutGroup
+
+    id = "layoutGroup"
+    layoutDirection = "vert"
+    horizAlignment = "center"
+    vertAlignment = "top"
+    itemSpacings = "[20]"
+    translation = "[90,0]">
+
+    <poster
+        id = "posterUser"
+        visible = "true"
+        opacity = "0.4"
+        width = "180"
+        height ="180"/>
+
+    <label 
+        id ="label" 
+        width = "180"
+        height ="10"
+        horizAlign = "center"
+        vertAlign = "center"
+        visible = "true"
+        color="0x696969"/>
+
+    <poster
+        id = "posterEdit"
+        visible = "false"
+        opacity = "0.4"
+        width = "50"
+        height ="50"
+        uri = "pkg:/images/edit2.png"/>
+
+    </layoutGroup>
+  
+  </children>
+
+</component>
